@@ -32,17 +32,19 @@ a {
 }
 
 header {
-    width: 1440px;
-    height: 146px;
-    justify-content: center;
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-top: 20px;  
 }
 
 .logo-container img {
     width: 200px;
     height: 34px;
-    display: flex;
+    display: block;
     margin: 0 auto;
 }
 
@@ -63,11 +65,13 @@ header {
 
 .title {
     background-color: rgba(245, 245, 239, 0.938);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
-.title h1, p, .button-explor{
+.title h1,
+.title p, 
+.button-explor{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +79,6 @@ header {
 }
 
 .button-explor {
-    display: block;
     margin: 30px auto;
     width: 218px;
     height: 50px;
