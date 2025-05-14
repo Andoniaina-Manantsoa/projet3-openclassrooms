@@ -14,35 +14,56 @@
     <link rel="stylesheet" href="design/design.css">
 </head>
 
-<body>
+<body class="main-container">
     <header class="main-header">
         <!--LOGO-->
-        <div class="logo-container">
-            <img src="design/Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+        <div>
+            <img src="design/Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/logo/ohmyfood.png"alt="Logo Ohmyfood" class="logo" >
+        </div>
 
-            <!--LOCALISATION-->
-            <div class="location">
+        <!--LOCALISATION-->
+        <form class="location">
+            <div class="input-icon">
                 <i class="fa-solid fa-thin fa-location-dot"></i>
-                <p>Paris, Belleville</p>
+                <input type="text" name="Ville" required autofocus placeholder= "Paris, Belleville">
             </div>
 
-            <div class="title">
+        </form>
+    </header>
+
+    <main>
+        <section class="section-title">
+            <div>
                 <h1>Réservez le menu qui vous convient</h1>
 
-                <p>Découvrez des rstaurants d'exception, séléctionnés par nos soins</p>
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
 
-                <div>
+                <div class="explor-button">
                     <button type="button" class="button-explor">
                         Explorer nos restaurants
                     </button>
                 </div>
+        </section>
+
+        <section class="main-fonctionnement">
+            <div>
+                <h2>Fonctionnement</h2>
+                <div class="fontionnement-button">
+                    <button type="button" class="button-fonctionnement">
+                        <b>Choisissez un restaurant</b>
+                    </button>
+
+                    <button type="button" class="button-fonctionnement">
+                        <b>Composez votre menue</b>
+                    </button>
+
+                    <button type="button" class="button-fonctionnement">
+                        <b>Dégustez au restaurant</b>
+                    </button>
+                </div>
             </div>
-        </div>
-    </header>
-    <main>
-        <div class="main-fonctionnement">
-            <h2>Fonctionnement</h2>
-        </div>
+        </section>
+
     </main>
 </body>
 
