@@ -34,6 +34,7 @@ a {
     max-width: 1440px;
     min-width: 375px;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     margin-inline: auto;
 }
@@ -223,6 +224,7 @@ a {
     color: white;
     font-size: 20px;
     margin-left: 20px;
+    font-weight: normal;
 }
 
 .footer-list li {
