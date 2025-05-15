@@ -8,7 +8,8 @@
 img {
     display: block;
     object-fit: cover;
-    min-width: 100%;
+    min-width: 0;
+    max-width: 100%;
 }
 
 a {
@@ -20,13 +21,12 @@ a {
 }
 
 /****** General ***********/
+.logo {
+    font-family: 'Shrikhand', sans-serif;
+}
 
 * {
     font-family: 'Roboto', sans-serif;
-}
-
-.section-title .main-header {
-    font-family: 'shrikhand' , sans-serif;
 }
 
 .main-container {
@@ -52,10 +52,15 @@ a {
     justify-content: center;
 }
 
-.logo {
-    width: 162px;
-    height: 63px;
-    margin-top: 14px;
+.logo-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.logo-container .logo {
+    width: 190px;
+    font-size: 30px;
 }
 
 .input-icon {
@@ -194,6 +199,10 @@ a {
     padding-left: 10px;
 }
 
+.card-title a {
+    color: #101010;
+}
+
 .card-content {
     display: flex;
     justify-content: space-between;
@@ -202,20 +211,23 @@ a {
 }
 
 .fa-regular {
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .main-footer {
     background-color: #353535;
-    height: 280px;
+    height: 210px;
 }
 
-.logo {
+.footer-logo .logo {
     color: white;
+    font-size: 20px;
+    margin-left: 20px;
 }
 
 .footer-list li {
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .footer-list ul {
@@ -224,7 +236,7 @@ a {
     margin-top: 20px;
 }
 
-a {
+.footer-list a {
     margin-bottom: 10px;
     color: white;
     text-decoration: none;
