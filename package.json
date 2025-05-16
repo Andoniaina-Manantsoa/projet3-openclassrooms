@@ -1,0 +1,14 @@
+{
+  "name": "projet_3",
+  "version": "1.0.0",
+  "description": "site OhMyFood Paris",
+  "scripts": {
+    "dev": "sass --watch sass/main.scss:css/style.css",
+    "build": "sass sass/main.scss:css/style.css --style=compressed"
+  },
+  "author": "RAZANADRAKOTO Andoniaina",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}
