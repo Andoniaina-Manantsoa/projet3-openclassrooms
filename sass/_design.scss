@@ -147,21 +147,21 @@
 .main-restaurant {
     background-color: #f3f3f3;
     height: 1300px;
-}
 
-.main-restaurant h2 {
-    padding-bottom: 20px;
-}
-
-.restaurant-cards .card {
-    width: 340px;
-    height: 260px;
-    border-radius: 15px;
-    background-color: #ffffff;
+    h2 {
+        padding-bottom: 20px;
+    }
 }
 
 .restaurant-cards {
     padding-top: 20px;
+
+    .card {
+        width: 340px;
+        height: 260px;
+        border-radius: 15px;
+        background-color: #ffffff;
+    }
 }
 
 .card img {
