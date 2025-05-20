@@ -1,6 +1,7 @@
 @use "reset";
 
-/****** General ***********/
+/* Generale */
+
 .logo {
     font-family: "Shrikhand", sans-serif;
 }
@@ -79,7 +80,7 @@
     }
 }
 
-.button-explor {
+.send-button {
     margin: 30px auto;
     width: 220px;
     height: 50px;
@@ -91,7 +92,7 @@
     transition: filter 0.1s ease-in-out;
 }
 
-.button-explor:hover {
+.send-button:hover {
     opacity: 0.8;
     filter: brightness(1.1);
 }
@@ -180,6 +181,7 @@
         width: 100%;
         display: block;
     }
+
 }
 
 .image-text {
@@ -211,32 +213,36 @@
     padding-right: 10px;
 }
 
-.heart-checkbox {
-    display: none;
-}
-
 .heart-label {
-    cursor: pointer;
-    font-size: 25px;
     position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 24px;
 }
 
+/* Cœur vide visible par défaut */
 .empty-heart {
     color: black;
-    display: inline;
+    transition: opacity 0.1s ease;
 }
 
+/* Cœur plein violet masqué au départ */
 .filled-heart {
-    display: none;
-    color: #926ac4;
+    color: #9356dc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.1s ease;
 }
 
-.heart-checkbox:checked+.heart-label .empty-heart {
-    display: none;
+/* Au survol du label, cacher vide, montrer plein */
+.heart-label:hover .empty-heart {
+    opacity: 0;
 }
 
-.heart-checkbox:checked+.heart-label .filled-heart {
-    display: inline;
+.heart-label:hover .filled-heart {
+    opacity: 1;
 }
 
 .main-footer {
@@ -271,3 +277,5 @@
         margin-right: 10px;
     }
 }
+
+/*# sourceMappingURL=style.css.map */

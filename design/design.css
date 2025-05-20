@@ -20,13 +20,14 @@ a {
     outline: red solid 1px;
 }
 
-/****** General ***********/
+/* Generale */
+
 .logo {
-    font-family: 'Shrikhand', sans-serif;
+    font-family: "Shrikhand", sans-serif;
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .main-container {
@@ -101,12 +102,19 @@ a {
 
 .button-explor {
     margin: 30px auto;
-    width: 218px;
+    width: 220px;
     height: 50px;
     border-radius: 30px;
     background: linear-gradient(180deg, #9356dc, #ff79da);
     color: white;
     border: none;
+    cursor: pointer;
+    transition: filter 0.1s ease-in-out;
+}
+
+.button-explor:hover {
+    opacity: 0.8;
+    filter: brightness(1.1);
 }
 
 .main-fonctionnement,
@@ -141,6 +149,12 @@ a {
     padding-bottom: 30px;
 }
 
+.button-fonctionnement i {
+    color: #9356dc;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
 .fonctionnement-number {
     position: absolute;
     left: -10px;
@@ -152,12 +166,6 @@ a {
     background-color: #9356dc;
     color: #eaeaea;
     font-size: 15px;
-}
-
-.button-fonctionnement i {
-    color: #9356dc;
-    font-size: 20px;
-    padding-right: 20px;
 }
 
 .main-restaurant {
@@ -180,13 +188,30 @@ a {
     padding-top: 20px;
 }
 
-.card img {
+.image-container {
+    position: relative;
+}
+
+.image-container img {
     width: 340px;
     height: 200px;
     top: -57px;
     left: -3px;
     padding-bottom: 10px;
     border-radius: 15px;
+    width: 100%;
+    display: block;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 160px;
+    left: 250px;
+    color: green;
+    background-color: rgb(137, 235, 189);
+    padding: 6px 10px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .card-title,
@@ -207,8 +232,36 @@ a {
     padding-right: 10px;
 }
 
-.fa-regular {
-    font-size: 25px;
+.heart-label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Cœur vide visible par défaut */
+.empty-heart {
+    color: black;
+    transition: opacity 0.1s ease;
+}
+
+/* Cœur plein violet masqué au départ */
+.filled-heart {
+    color: #9356dc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+/* Au survol du label, cacher vide, montrer plein */
+.heart-label:hover .empty-heart {
+    opacity: 0;
+}
+
+.heart-label:hover .filled-heart {
+    opacity: 1;
 }
 
 .main-footer {

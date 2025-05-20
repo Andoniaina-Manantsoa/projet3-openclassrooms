@@ -8,7 +8,8 @@
 
 img {
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   min-width: 0;
   max-width: 100%;
 }
@@ -378,6 +379,4 @@ h1 {
   margin-right: 10px;
 }
 
-
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
