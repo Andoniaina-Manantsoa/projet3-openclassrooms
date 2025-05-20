@@ -39,7 +39,7 @@
     padding-top: 10px;
 
     .logo {
-        width: 195px;
+        width: 190px;
         font-size: 30px;
     }
 }
@@ -207,23 +207,25 @@
     font-weight: normal;
 }
 
-.footer-list li {
-    margin-bottom: 10px;
-    margin-left: 20px;
-}
+.footer-list {
+    li {
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
 
-.footer-list ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
 
-.footer-list a {
-    margin-bottom: 10px;
-    color: white;
-    text-decoration: none;
-}
+    a {
+        margin-bottom: 10px;
+        color: white;
+        text-decoration: none;
+    }
 
-.footer-list i {
-    margin-right: 10px;
+    i {
+        margin-right: 10px;
+    }
 }
