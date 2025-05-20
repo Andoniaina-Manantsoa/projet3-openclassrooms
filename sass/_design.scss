@@ -39,7 +39,7 @@
     padding-top: 10px;
 
     .logo {
-        width: 190px;
+        width: 150px;
         font-size: 30px;
     }
 }
@@ -87,10 +87,13 @@
     background: linear-gradient(180deg, #9356dc, #ff79da);
     color: white;
     border: none;
+    cursor: pointer;
+    transition: filter 0.1s ease-in-out;
 }
 
-.explor-button {
-    padding-left: 45px;
+.button-explor:hover {
+    opacity: 0.8;
+    filter: brightness(1.1);
 }
 
 .main-fonctionnement,

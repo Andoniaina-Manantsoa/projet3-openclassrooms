@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../design/design.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../design/style-menu.css" type="text/css">
 </head>
 
@@ -33,7 +33,11 @@
         <section class="menu">
             <div class="menu-title">
                 <h1>La palette du goût</h1>
-                <i class="fa-regular fa-heart"></i>
+                <input type="checkbox" id="heart-3" class="heart-checkbox" />
+                <label for="heart-3" class="heart-label">
+                    <i class="fa-regular fa-heart empty-heart"></i>
+                    <i class="fa-solid fa-heart filled-heart"></i>
+                </label>
             </div>
 
             <section class="menu-list">
@@ -109,11 +113,11 @@
                     </div>
                 </div>
 
-                    <div class="order-button">
-                        <button type="button" class="button-order">
-                            Commander
-                        </button>
-                    </div>
+                <div class="order-button">
+                    <button type="button" class="button-order">
+                        Commander
+                    </button>
+                </div>
 
             </section>
 

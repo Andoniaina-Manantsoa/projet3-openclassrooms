@@ -60,7 +60,7 @@ a {
 }
 
 .logo-container .logo {
-    width: 195px;
+    width: 150px;
     font-size: 30px;
 }
 
@@ -80,13 +80,13 @@ a {
 .input-icon input {
     width: 375px;
     height: 50px;
-    background-color:#eaeaea;
+    background-color: #eaeaea;
     color: #353535;
     padding-left: 120px;
     border: none;
 }
 
-.section-title{
+.section-title {
     background-color: #f3f3f3;
     padding: 25px;
     display: flex;
@@ -109,11 +109,7 @@ a {
     border: none;
 }
 
-.explor-button {
-    padding-left: 45px;
-}
-
-.main-fonctionnement, 
+.main-fonctionnement,
 .main-restaurant,
 .main-footer {
     width: 100%;
@@ -180,7 +176,7 @@ a {
     background-color: #ffffff;
 }
 
-.restaurant-cards{
+.restaurant-cards {
     padding-top: 20px;
 }
 
@@ -193,7 +189,7 @@ a {
     border-radius: 15px;
 }
 
-.card-title, 
+.card-title,
 .card-subtitle {
     margin-top: 0;
     padding-bottom: 10px;
@@ -245,6 +241,5 @@ a {
 }
 
 .footer-list i {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
-

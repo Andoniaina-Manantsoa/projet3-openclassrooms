@@ -29,7 +29,7 @@ h1 {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 70px; 
+    gap: 70px;
     padding: 10px 20px;
 }
 
@@ -46,21 +46,21 @@ h1 {
 
 .menu-title {
     display: flex;
-    align-items: center;      
-    justify-content: space-between; 
-    gap: 10px; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .menu {
     height: 1100px;
     width: 100%;
 }
-    
+
 .menu,
 .menu-container {
     background-color: #f3f3f3;
     border-radius: 40px 40px 0 0;
-    margin-top: -50px; 
+    margin-top: -50px;
     padding: 20px;
     position: relative;
 }
@@ -85,7 +85,7 @@ h1 {
     font-weight: normal;
 }
 
-.entrees-list, 
+.entrees-list,
 .plats-list,
 .desserts-list {
     padding-bottom: 12px;
@@ -93,7 +93,7 @@ h1 {
 
 .menu-button {
     text-align: left;
-    display: block; 
+    display: block;
     width: 340px;
     border-radius: 15px;
     padding: 15px;
@@ -119,6 +119,13 @@ h1 {
     background: linear-gradient(180deg, #9356dc, #ff79da);
     color: white;
     border: none;
+    cursor: pointer;
+    transition: filter 0.1s ease-in-out;
+}
+
+.button-order:hover {
+    opacity: 0.8;
+    filter: brightness(1.1);
 }
 
 .order-button {
