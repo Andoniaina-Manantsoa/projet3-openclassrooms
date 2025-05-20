@@ -2,11 +2,11 @@
 
 /****** General ***********/
 .logo {
-    font-family: 'Shrikhand', sans-serif;
+    font-family: "Shrikhand", sans-serif;
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .main-container {
@@ -81,7 +81,7 @@
 
 .button-explor {
     margin: 30px auto;
-    width: 218px;
+    width: 220px;
     height: 50px;
     border-radius: 30px;
     background: linear-gradient(180deg, #9356dc, #ff79da);
@@ -167,13 +167,30 @@
     }
 }
 
-.card img {
-    width: 340px;
-    height: 200px;
-    top: -57px;
-    left: -3px;
-    padding-bottom: 10px;
-    border-radius: 15px;
+.image-container {
+    position: relative;
+
+    img {
+        width: 340px;
+        height: 200px;
+        top: -57px;
+        left: -3px;
+        padding-bottom: 10px;
+        border-radius: 15px;
+        width: 100%;
+        display: block;
+    }
+}
+
+.image-text {
+    position: absolute;
+    bottom: 160px;
+    left: 250px;
+    color: green;
+    background-color: rgb(137, 235, 189);
+    padding: 6px 10px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .card-title,
@@ -194,8 +211,32 @@
     padding-right: 10px;
 }
 
-.fa-regular {
+.heart-checkbox {
+    display: none;
+}
+
+.heart-label {
+    cursor: pointer;
     font-size: 25px;
+    position: relative;
+}
+
+.empty-heart {
+    color: black;
+    display: inline;
+}
+
+.filled-heart {
+    display: none;
+    color: #926ac4;
+}
+
+.heart-checkbox:checked+.heart-label .empty-heart {
+    display: none;
+}
+
+.heart-checkbox:checked+.heart-label .filled-heart {
+    display: inline;
 }
 
 .main-footer {
@@ -210,11 +251,9 @@
     font-weight: normal;
 }
 
-.footer-list {
-    li {
-        margin-bottom: 10px;
-        margin-left: 20px;
-    }
+.footer-list li {
+    margin-bottom: 10px;
+    margin-left: 20px;
 
     ul {
         list-style: none;
