@@ -9,14 +9,14 @@ h1 {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 70px; 
+    gap: 70px;
     padding: 10px 20px;
-}
 
-.logo-container i {
-    font-size: 20px;
-    color: #101010;
-    cursor: pointer;
+    i {
+        font-size: 20px;
+        color: #101010;
+        cursor: pointer;
+    }
 }
 
 .images img {
@@ -26,21 +26,21 @@ h1 {
 
 .menu-title {
     display: flex;
-    align-items: center;      
-    justify-content: space-between; 
-    gap: 10px; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .menu {
     height: 1100px;
     width: 100%;
 }
-    
+
 .menu,
 .menu-container {
     background-color: #f3f3f3;
     border-radius: 40px 40px 0 0;
-    margin-top: -50px; 
+    margin-top: -50px;
     padding: 20px;
     position: relative;
 }
@@ -53,19 +53,19 @@ h1 {
     width: 349px;
     height: 270px;
     padding-top: 30px;
+
+    h3 {
+        width: 40px;
+        border-bottom: 2px solid #99e2d0;
+        display: inline-block;
+        padding-bottom: 5px;
+        margin-bottom: 12px;
+        margin-top: 20px;
+        font-weight: normal;
+    }
 }
 
-.menu-list h3 {
-    width: 40px;
-    border-bottom: 2px solid #99e2d0;
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 12px;
-    margin-top: 20px;
-    font-weight: normal;
-}
-
-.entrees-list, 
+.entrees-list,
 .plats-list,
 .desserts-list {
     padding-bottom: 12px;
@@ -73,22 +73,22 @@ h1 {
 
 .menu-button {
     text-align: left;
-    display: block; 
+    display: block;
     width: 340px;
     border-radius: 15px;
     padding: 15px;
     border: none;
     background-color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    h4 {
+        margin-bottom: 5px;
+    }
 }
 
 .price {
     position: absolute;
     right: 30px;
-}
-
-.menu-button h4 {
-    margin-bottom: 5px;
 }
 
 .button-order {
