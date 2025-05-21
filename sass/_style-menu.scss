@@ -1,5 +1,9 @@
 @use "reset";
 
+//variable
+$background-color-menu : #f3f3f3;
+$background-color-menu-button : #ffffff;
+
 /****** General ***********/
 
 h1 {
@@ -38,7 +42,7 @@ h1 {
 
 .menu,
 .menu-container {
-    background-color: #f3f3f3;
+    background-color: $background-color-menu;
     border-radius: 40px 40px 0 0;
     margin-top: -50px;
     padding: 20px;
@@ -78,7 +82,7 @@ h1 {
     border-radius: 15px;
     padding: 15px;
     border: none;
-    background-color: #ffffff;
+    background-color: $background-color-menu-button;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
     h4 {

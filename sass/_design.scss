@@ -1,7 +1,14 @@
+//composant
 @use "reset";
 
-/* Generale */
+//variables
+$color-incon : #353535;
+$background-color: #f3f3f3;
+$color-i: #9356dc;
+$color-footer: #ffffff;
+$background-color-card: #ffffff;
 
+/* Generale */
 .logo {
     font-family: "Shrikhand", sans-serif;
 }
@@ -37,7 +44,7 @@
 .logo-container {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 15px;
 
     .logo {
         width: 150px;
@@ -54,21 +61,21 @@
         top: 60%;
         left: 100px;
         transform: translateY(-50%);
-        color: #353535;
+        color: $color-incon ;
     }
 
     input {
         width: 375px;
         height: 50px;
         background-color: #eaeaea;
-        color: #353535;
+        color: $color-incon ;
         padding-left: 120px;
         border: none;
     }
 }
 
 .section-title {
-    background-color: #f3f3f3;
+    background-color: $background-color;
     padding: 25px;
     display: flex;
     text-align: center;
@@ -129,7 +136,7 @@
     padding-bottom: 30px;
 
     i {
-        color: #9356dc;
+        color: $color-i;
         font-size: 20px;
         padding-right: 20px;
     }
@@ -143,13 +150,13 @@
     padding-top: 5px;
     border-radius: 50%;
     border: none;
-    background-color: #9356dc;
+    background-color: $color-i;
     color: #eaeaea;
     font-size: 15px;
 }
 
 .main-restaurant {
-    background-color: #f3f3f3;
+    background-color: $background_color;
     height: 1300px;
 
     h2 {
@@ -164,7 +171,7 @@
         width: 340px;
         height: 260px;
         border-radius: 15px;
-        background-color: #ffffff;
+        background-color: $background-color-card;
     }
 }
 
@@ -181,7 +188,6 @@
         width: 100%;
         display: block;
     }
-
 }
 
 .image-text {
@@ -228,7 +234,7 @@
 
 /* Cœur plein violet masqué au départ */
 .filled-heart {
-    color: #9356dc;
+    color: $color_i;
     position: absolute;
     top: 0;
     left: 0;
@@ -251,25 +257,26 @@
 }
 
 .footer-logo .logo {
-    color: white;
-    font-size: 20px;
+    color: $color-footer;
+    font-size: 25px;
     margin-left: 20px;
     font-weight: normal;
+    margin-bottom: 15px;
 }
 
 .footer-list li {
     margin-bottom: 10px;
     margin-left: 20px;
+    list-style: none;
 
     ul {
-        list-style: none;
         padding: 0;
         margin-top: 20px;
     }
 
     a {
         margin-bottom: 10px;
-        color: white;
+        color: $color-footer;
         text-decoration: none;
     }
 
