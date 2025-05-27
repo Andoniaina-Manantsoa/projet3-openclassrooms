@@ -61,19 +61,21 @@ $background-color-card: #ffffff;
 }
 
 .input-icon {
+    display: flex;
+    justify-content: center;
     position: relative;
-    padding-top: 15px;
+    margin-top: 15px;
 
     i {
         position: absolute;
-        top: 60%;
-        left: 100px;
+        top: 50%;
+        left: 120px;
         transform: translateY(-50%);
         color: $color-incon ;
 
         @media (min-width: 1440px) {
             width: 1440px;
-            padding-left: 600px;
+            padding-left: 560px;
         }
     }
 
@@ -82,7 +84,7 @@ $background-color-card: #ffffff;
         height: 50px;
         background-color: #eaeaea;
         color: $color-incon ;
-        padding-left: 120px;
+        padding-left: 150px;
         border: none;
 
         @media (min-width: 1440px) {
