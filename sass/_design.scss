@@ -18,9 +18,9 @@ $background-color-card: #ffffff;
 }
 
 .main-container {
-    min-width: 375px;
-    max-width: 1440px;
     width: 100%;
+    min-width: 375px;
+    max-width: 1920px;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -38,7 +38,6 @@ $background-color-card: #ffffff;
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     @media (min-width: 1440px) {
         align-items: center;
@@ -60,7 +59,7 @@ $background-color-card: #ffffff;
     }
 }
 
-.input-icon {
+.location {
     display: flex;
     justify-content: center;
     position: relative;
@@ -69,40 +68,42 @@ $background-color-card: #ffffff;
     i {
         position: absolute;
         top: 50%;
-        left: 120px;
         transform: translateY(-50%);
         color: $color-incon ;
+        left: 35%;
 
         @media (min-width: 1440px) {
-            width: 1440px;
-            padding-left: 560px;
+            left: 48%;
         }
     }
 
     input {
-        width: 375px;
+        width: 100%;
         height: 50px;
         background-color: #eaeaea;
         color: $color-incon ;
-        padding-left: 150px;
         border: none;
+        text-align: center;
+        padding-left: 40px;
 
         @media (min-width: 1440px) {
             width: 1440px;
-            padding-left: 720px;
             font-size: 16px;
+            padding-left: 110px;
         }
     }
 }
 
 .section-title {
+    width: 100%;
     background-color: $background-color;
-    padding: 25px;
+    padding: 30px;
     display: flex;
     text-align: center;
+    justify-content: center;
 
     @media (min-width: 1440px) {
-        justify-content: center;
+        width: 100%;
     }
 
     p {
@@ -112,13 +113,13 @@ $background-color-card: #ffffff;
     }
 
     h1 {
-        width: 300px;
+        width: 100%;
+        min-width: 275px;
         height: 68px;
-        padding-left: 40px;
+        font-family: 'roboto', sans-serif;
 
         @media (min-width: 1440px) {
             width: 100%;
-            font-family: 'roboto', sans-serif;
             font-size: 40px;
         }
     }
@@ -159,6 +160,7 @@ $background-color-card: #ffffff;
 
     @media (min-width: 1440px) {
         display: grid;
+        grid-template-rows: repeat(1, 1fr);
         padding-left: 70px;
     }
 }
