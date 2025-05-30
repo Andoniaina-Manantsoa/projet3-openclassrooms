@@ -44,7 +44,6 @@ a {
   max-width: 1920px;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   margin-inline: auto;
 }
 
@@ -67,12 +66,10 @@ a {
 }
 
 .logo-container {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   padding-top: 15px;
 }
 .logo-container .logo {
-  width: 150px;
   font-size: 30px;
 }
 @media (min-width: 1440px) {
@@ -83,36 +80,26 @@ a {
 
 .location {
   width: 100%;
-  position: relative;
+  height: 50px;
   margin-top: 15px;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media (min-width: 1440px) {
+  .location {
+    box-shadow: none;
+  }
 }
 .location i {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  transform: translateY(-50%);
   color: #353535;
 }
-@media (min-width: 1440px) {
-  .location i {
-    left: 48%;
-  }
-}
-.location input {
-  width: 100%;
-  height: 50px;
-  background-color: #eaeaea;
+.location span {
   color: #353535;
-  border: none;
-  text-align: center;
-  padding-left: 40px;
-}
-@media (min-width: 1440px) {
-  .location input {
-    width: 1440px;
-    font-size: 16px;
-    padding-left: 110px;
-  }
 }
 
 .section-title {
@@ -383,7 +370,7 @@ a {
 /* Cœur vide visible par défaut */
 .empty-heart {
   color: black;
-  transition: opacity 0.1s ease;
+  transition: opacity 0.6s ease;
 }
 
 /* Cœur plein violet masqué au départ */
@@ -393,7 +380,7 @@ a {
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 0.1s ease;
+  transition: opacity 0.6s ease-in-out;
 }
 
 /* Au survol du label, cacher vide, montrer plein */
@@ -474,10 +461,6 @@ h1 {
 }
 
 .logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 70px;
   padding: 10px 20px;
 }
 .logo-container i {
