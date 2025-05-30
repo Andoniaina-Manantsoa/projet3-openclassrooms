@@ -82,17 +82,16 @@ a {
 }
 
 .location {
-  display: flex;
-  justify-content: center;
+  width: 100%;
   position: relative;
   margin-top: 15px;
 }
 .location i {
   position: absolute;
   top: 50%;
+  left: 35%;
   transform: translateY(-50%);
   color: #353535;
-  left: 35%;
 }
 @media (min-width: 1440px) {
   .location i {
