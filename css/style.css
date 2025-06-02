@@ -157,22 +157,13 @@ a {
   }
 }
 
-.main-fonctionnement,
-.main-restaurant {
+.main-wrapper {
   width: 100%;
   height: auto;
   padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-@media (min-width: 1440px) {
-  .main-fonctionnement,
-  .main-restaurant {
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    padding-left: 70px;
-  }
 }
 
 .main-fonctionnement h2 {
@@ -193,8 +184,8 @@ a {
 }
 @media (min-width: 1440px) {
   .fontionnement-button {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
+    width: 100%;
     gap: 40px;
     padding-bottom: 50px;
   }
@@ -252,7 +243,12 @@ a {
 
 .main-restaurant {
   background-color: #f3f3f3;
-  height: 1300px;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 1440px) {
   .main-restaurant {
@@ -270,13 +266,16 @@ a {
 
 .restaurant-cards {
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 @media (min-width: 1440px) {
   .restaurant-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding-bottom: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: 30px;
   }
 }
 .restaurant-cards .card {
@@ -288,8 +287,7 @@ a {
 }
 @media (min-width: 1440px) {
   .restaurant-cards .card {
-    width: 100%;
-    max-width: 600px;
+    width: 490px;
     height: 300px;
   }
 }
@@ -326,7 +324,7 @@ a {
 @media (min-width: 1440px) {
   .image-text {
     bottom: 180px;
-    left: 500px;
+    left: 400px;
   }
 }
 

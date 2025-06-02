@@ -137,22 +137,13 @@ $background-color-card: #ffffff;
     }
 }
 
-
-
-.main-fonctionnement,
-.main-restaurant {
+.main-wrapper {
     width: 100%;
     height: auto;
     padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    @media (min-width: 1440px) {
-        display: grid;
-        grid-template-rows: repeat(1, 1fr);
-        padding-left: 70px;
-    }
 }
 
 .main-fonctionnement h2 {
@@ -171,8 +162,8 @@ $background-color-card: #ffffff;
     padding-bottom: 50px;
 
     @media (min-width: 1440px) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        flex-direction: row;
+        width: 100%;
         gap: 40px;
         padding-bottom: 50px;
     }
@@ -229,7 +220,12 @@ $background-color-card: #ffffff;
 
 .main-restaurant {
     background-color: $background_color;
-    height: 1300px;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media (min-width: 1440px) {
         height: 800px;
@@ -246,12 +242,15 @@ $background-color-card: #ffffff;
 
 .restaurant-cards {
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
     @media (min-width: 1440px) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding-bottom: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        bottom: 30px;
     }
 
     .card {
@@ -262,8 +261,7 @@ $background-color-card: #ffffff;
         margin-bottom: 25px;
 
         @media (min-width: 1440px) {
-            width: 100%;
-            max-width: 600px;
+            width: 490px;
             height: 300px;
         }
     }
@@ -300,7 +298,7 @@ $background-color-card: #ffffff;
 
     @media (min-width: 1440px) {
         bottom: 180px;
-        left: 500px;
+        left: 400px;
     }
 }
 
