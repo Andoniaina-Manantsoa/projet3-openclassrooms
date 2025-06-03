@@ -47,6 +47,7 @@ a {
   margin: 0;
   margin-inline: auto;
 }
+
 .fa-solid {
   color: var(--main-color);
   border-radius: 25px;
@@ -487,11 +488,13 @@ h1 {
   cursor: pointer;
   position: absolute;
   left: 20px;
+  top: 30px;
   transform: translateY(-50%);
 }
 @media (min-width: 1440px) {
   .logo-container i {
     font-size: 30px;
+    top: 40px;
   }
 }
 
@@ -506,22 +509,23 @@ h1 {
 }
 
 .menu {
-  height: 1100px;
   width: 100%;
+  height: 1100px;
   background-color: #f3f3f3;
   border-radius: 40px 40px 0 0;
   margin-top: -50px;
   padding: 20px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (min-width: 1440px) {
   .menu {
-    width: 1055px;
+    width: 100%;
+    max-width: 1055px;
     height: 1250px;
-    margin-left: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: -50px auto 0;
   }
 }
 
@@ -536,10 +540,12 @@ h1 {
     margin-top: 20px;
   }
 }
+.menu-title .heart-label {
+  margin-left: 30px;
+}
 @media (min-width: 1440px) {
   .menu-title .heart-label {
     margin-top: 20px;
-    margin-left: 30px;
   }
 }
 
@@ -588,9 +594,10 @@ h1 {
 }
 
 .menu-button {
+  width: 100%;
+  max-width: 1440px;
   text-align: left;
   display: block;
-  width: 340px;
   border-radius: 15px;
   padding: 15px;
   border: none;
@@ -599,8 +606,8 @@ h1 {
 }
 @media (min-width: 1440px) {
   .menu-button {
-    width: 634px;
-    height: 69px;
+    width: 100%;
+    max-width: 634px;
   }
 }
 .menu-button h4 {
@@ -619,7 +626,7 @@ h1 {
 
 .price {
   position: absolute;
-  right: 30px;
+  right: 50px;
 }
 @media (min-width: 1440px) {
   .price {
