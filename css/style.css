@@ -577,7 +577,7 @@ h1 {
 }
 .menu-list h3 {
   width: 40px;
-  border-bottom: 2px solid #99e2d0;
+  border-bottom: 2px solid #99E2D0;
   display: inline-block;
   padding-bottom: 5px;
   margin-bottom: 12px;
@@ -610,6 +610,7 @@ h1 {
 }
 
 .menu-button {
+  display: block;
   width: 100%;
   max-width: 349px;
   text-align: left;
@@ -618,24 +619,13 @@ h1 {
   border: none;
   background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
 }
 @media (min-width: 1440px) {
   .menu-button {
     width: 100%;
     max-width: 634px;
-  }
-}
-.menu-button h4 {
-  margin-bottom: 5px;
-}
-@media (min-width: 1440px) {
-  .menu-button h4 {
-    font-size: 18px;
-  }
-}
-@media (min-width: 1440px) {
-  .menu-button p {
-    font-size: 16px;
   }
 }
 
@@ -645,6 +635,54 @@ h1 {
   align-items: center;
   width: 100%;
   max-width: 1440px;
+}
+.menu-content h4 {
+  margin-bottom: 5px;
+}
+@media (min-width: 1440px) {
+  .menu-content h4 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .menu-content p {
+    font-size: 16px;
+  }
+}
+
+.price-check-menu {
+  display: flex;
+  align-items: center;
+}
+
+.check-menu {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  color: #ffffff;
+  background-color: #99E2D0;
+  padding: 30px;
+  cursor: pointer;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+}
+
+/* Input caché */
+.menu-check {
+  display: none;
+}
+
+/* Quand l'input est coché, affiche l'icône check */
+.menu-check:checked + .menu-button .check-menu {
+  transform: scaleX(1);
+  transition: translate 100%, 0;
+}
+.menu-check:checked + .menu-button .price {
+  transform: translateX(-40px);
 }
 
 /*# sourceMappingURL=style.css.map */

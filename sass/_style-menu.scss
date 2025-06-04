@@ -2,7 +2,8 @@
 
 //variable
 $background-color-menu : #f3f3f3;
-$background-color-menu-button : #ffffff;
+$background-color-button : #ffffff;
+$style-color : #99E2D0;
 
 /****** General ***********/
 
@@ -91,7 +92,7 @@ h1 {
 
     h3 {
         width: 40px;
-        border-bottom: 2px solid #99e2d0;
+        border-bottom: 2px solid $style-color;
         display: inline-block;
         padding-bottom: 5px;
         margin-bottom: 12px;
@@ -124,19 +125,30 @@ h1 {
 }
 
 .menu-button {
+    display: block;
     width: 100%;
     max-width: 349px;
     text-align: left;
     border-radius: 15px;
     padding: 15px;
     border: none;
-    background-color: $background-color-menu-button;
+    background-color: $background-color-button;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
 
     @media (min-width: 1440px) {
         width: 100%;
         max-width: 634px;
     }
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
 
     h4 {
         margin-bottom: 5px;
@@ -153,10 +165,40 @@ h1 {
     }
 }
 
-.menu-content {
+.price-check-menu {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1440px;
+}
+
+.check-menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    color: $background-color-button;
+    background-color: $style-color;
+    padding: 30px;
+    cursor: pointer;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+/* Input caché */
+.menu-check {
+    display: none;
+}
+
+/* Quand l'input est coché, affiche l'icône check */
+.menu-check:checked+.menu-button {
+    .check-menu {
+        transform: scaleX(1);
+        transition: translate (100%, 0);
+    }
+
+    .price {
+        transform: translateX(-40px);
+    }
 }
