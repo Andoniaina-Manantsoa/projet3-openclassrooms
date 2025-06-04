@@ -372,6 +372,10 @@ a {
   padding-right: 10px;
 }
 
+.heart-checkbox {
+  display: none;
+}
+
 .heart-label {
   position: relative;
   display: inline-block;
@@ -401,11 +405,18 @@ a {
 }
 
 /* Au survol du label, cacher vide, montrer plein */
-.heart-label:hover .empty-heart {
-  opacity: 0;
+/*.heart-label:hover .empty-heart {
+    opacity: 0;
 }
 
 .heart-label:hover .filled-heart {
+    opacity: 1;
+}*/
+.heart-checkbox:checked + .heart-label .empty-heart {
+  opacity: 0;
+}
+
+.heart-checkbox:checked + .heart-label .filled-heart {
   opacity: 1;
 }
 
