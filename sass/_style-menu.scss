@@ -208,3 +208,48 @@ h1 {
     min-width: 0;
     white-space: nowrap;
 }
+
+#loader-entrees {
+    opacity: 0;
+    animation: fadeInPage 1s ease forwards;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#loader-plats {
+    opacity: 0;
+    animation: fadeInPage 2s ease forwards;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#loader-desserts {
+    opacity: 0;
+    animation: fadeInPage 3s ease forwards;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
