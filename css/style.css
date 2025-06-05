@@ -610,17 +610,13 @@ h1 {
 }
 
 .menu-button {
-  display: block;
+  display: flex;
   width: 100%;
-  max-width: 349px;
-  text-align: left;
   border-radius: 15px;
-  padding: 15px;
-  border: none;
+  padding-left: 15px;
   background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  position: relative;
 }
 @media (min-width: 1440px) {
   .menu-button {
@@ -635,6 +631,9 @@ h1 {
   align-items: center;
   width: 100%;
   max-width: 1440px;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: all 0.3s ease-out;
 }
 .menu-content h4 {
   margin-bottom: 5px;
@@ -644,45 +643,54 @@ h1 {
     font-size: 18px;
   }
 }
+.menu-content p {
+  font-size: 15px;
+}
 @media (min-width: 1440px) {
   .menu-content p {
     font-size: 16px;
   }
 }
 
-.price-check-menu {
-  display: flex;
-  align-items: center;
-}
-
 .check-menu {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
+  height: 69px;
+  width: 20px;
+  background-color: #99E2D0;
+  color: white;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
-  color: #ffffff;
-  background-color: #99E2D0;
-  padding: 30px;
-  cursor: pointer;
-  transform: scaleX(0);
-  transition: transform 300ms ease-in-out;
+  display: grid;
+  place-content: center;
+  flex-shrink: 0;
+  transition: right 0.5s ease-in-out;
+  opacity: 0;
+}
+.check-menu i {
+  transition: transform 0.5s ease-in-out;
+}
+.check-menu:hover {
+  flex-basis: 50px;
+  transform-origin: right;
+  opacity: 1;
 }
 
-/* Input caché */
-.menu-check {
-  display: none;
+.text {
+  flex-shrink: 0;
+  max-width: 250px;
+  white-space: nowrap;
 }
 
-/* Quand l'input est coché, affiche l'icône check */
-.menu-check:checked + .menu-button .check-menu {
-  transform: scaleX(1);
-  transition: translate 100%, 0;
+.price {
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 15px;
+  font-size: 15px;
 }
-.menu-check:checked + .menu-button .price {
-  transform: translateX(-40px);
+
+.price-check-group {
+  display: flex;
+  gap: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
