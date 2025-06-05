@@ -689,7 +689,6 @@ h1 {
 .text {
   flex: 1 1 auto;
   min-width: 0;
-  max-width: 250px;
   white-space: nowrap;
 }
 
