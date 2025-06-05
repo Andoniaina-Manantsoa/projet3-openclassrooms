@@ -145,7 +145,6 @@ h1 {
     align-items: center;
     width: 100%;
     max-width: 1440px;
-    overflow: hidden;
     flex-shrink: 0;
     transition: all 0.3s ease-out;
 
@@ -158,7 +157,7 @@ h1 {
     }
 
     p {
-        font-size: 15px;
+        font-size: 14px;
 
         @media (min-width: 1440px) {
             font-size: 16px;
@@ -168,8 +167,6 @@ h1 {
 
 .check-menu {
     height: 69px;
-    width: 100%;
-    max-width: 50px;
     background-color: $style-color;
     color: white;
     border-bottom-right-radius: 15px;
@@ -178,10 +175,7 @@ h1 {
     place-content: center;
     flex-shrink: 0;
     opacity: 0;
-
-    i {
-        transition: transform 0.5s ease-in-out;
-    }
+    transition: transform 0.5s ease-in-out;
 }
 
 .menu-button:hover .check-menu {
@@ -205,11 +199,13 @@ h1 {
         align-items: flex-end;
         padding-bottom: 15px;
         font-size: 15px;
+        padding-left: 10px;
     }
 }
 
 .text {
-    flex-shrink: 0;
+    flex: 1 1 auto;
+    min-width: 0;
     max-width: 250px;
     white-space: nowrap;
 }

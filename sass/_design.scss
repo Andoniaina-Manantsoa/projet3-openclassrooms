@@ -20,7 +20,6 @@ $background-color-card: #ffffff;
 .main-container {
     width: 100%;
     min-width: 375px;
-    max-width: 1920px;
     height: auto;
     padding: 0;
     margin: 0;
@@ -417,7 +416,6 @@ $background-color-card: #ffffff;
 .footer-logo {
     @media (min-width : 1440px) {
         width: 100%;
-        max-width: 139px;
         height: 30px;
     }
 
