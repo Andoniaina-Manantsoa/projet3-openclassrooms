@@ -668,7 +668,8 @@ h1 {
 .check-menu i {
   transition: transform 0.5s ease-in-out;
 }
-.check-menu:hover {
+
+.menu-button:hover .check-menu {
   flex-basis: 50px;
   transform-origin: right;
   opacity: 1;
