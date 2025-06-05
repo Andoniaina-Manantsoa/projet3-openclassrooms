@@ -127,7 +127,6 @@ h1 {
 .menu-button {
     display: flex;
     width: 100%;
-    max-width: 349px;
     border-radius: 15px;
     padding-left: 15px;
     background-color: $background-color-button;
@@ -169,7 +168,8 @@ h1 {
 
 .check-menu {
     height: 69px;
-    width: 20px;
+    width: 100%;
+    max-width: 50px;
     background-color: $style-color;
     color: white;
     border-bottom-right-radius: 15px;
@@ -177,7 +177,6 @@ h1 {
     display: grid;
     place-content: center;
     flex-shrink: 0;
-    transition: right 0.5s ease-in-out;
     opacity: 0;
 
     i {
@@ -196,21 +195,21 @@ h1 {
     text-overflow: ellipsis;
 }
 
+.price-check-group {
+    display: flex;
+    gap: 5px;
+
+    .price {
+        flex-shrink: 0;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 15px;
+        font-size: 15px;
+    }
+}
+
 .text {
     flex-shrink: 0;
     max-width: 250px;
     white-space: nowrap;
-}
-
-.price {
-    flex-shrink: 0;
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 15px;
-    font-size: 15px;
-}
-
-.price-check-group {
-    display: flex;
-    gap: 5px;
 }
