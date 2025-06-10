@@ -394,7 +394,7 @@ $background-color-card: #ffffff;
     display: flex;
     flex-direction: column;
     padding: 15px;
-    gap: 10px;
+    gap: 15px;
 
     @media (min-width : 1440px) {
         width: 100%;
@@ -409,22 +409,27 @@ $background-color-card: #ffffff;
 
 .footer-logo {
     @media (min-width : 1440px) {
-        width: 100%;
+        width: auto;
         height: 30px;
+        display: flex;
+        align-items: flex-end;
+        padding-left: 100px;
     }
 
     .logo {
         color: $color-footer;
         font-size: 25px;
-        margin-left: 20px;
         font-weight: normal;
     }
 }
 
 .footer-list {
     @media (min-width : 1440px) {
+        width: auto;
         height: 30px;
-        padding-left: 350px;
+        display: flex;
+        align-items: flex-end;
+        margin-left: auto;
     }
 
     ul {
@@ -445,7 +450,6 @@ $background-color-card: #ffffff;
         }
 
         a {
-            margin-bottom: 10px;
             color: $color-footer;
             text-decoration: none;
         }

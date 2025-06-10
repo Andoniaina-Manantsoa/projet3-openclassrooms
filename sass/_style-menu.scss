@@ -146,7 +146,7 @@ h1 {
     width: 100%;
     max-width: 1440px;
     flex-shrink: 0;
-    transition: all 0.3s ease-out;
+    transition: all 6s ease-out;
 
     h4 {
         margin-bottom: 5px;
@@ -175,7 +175,7 @@ h1 {
     place-content: center;
     flex-shrink: 0;
     opacity: 0;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 6s ease-in-out;
 }
 
 .menu-button:hover .check-menu {
@@ -191,7 +191,7 @@ h1 {
 
 .price-check-group {
     display: flex;
-    gap: 5px;
+    gap: 10px;
 
     .price {
         flex-shrink: 0;
