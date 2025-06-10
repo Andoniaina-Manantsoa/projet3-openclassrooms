@@ -670,7 +670,7 @@ h1 {
   place-content: center;
   flex-shrink: 0;
   opacity: 0;
-  transition: transform 6s ease-in-out;
+  transition: opacity 6s ease-in-out transform 6s ease-in-out;
 }
 
 .menu-button:hover .check-menu {
@@ -705,7 +705,7 @@ h1 {
 
 #loader-entrees {
   opacity: 0;
-  animation: fadeInPage 1s ease forwards;
+  animation: fadeInPage 2s ease forwards;
 }
 
 @keyframes fadeInPage {
@@ -718,7 +718,7 @@ h1 {
 }
 #loader-plats {
   opacity: 0;
-  animation: fadeInPage 2s ease forwards;
+  animation: fadeInPage 3s ease forwards;
 }
 
 @keyframes fadeInPage {
@@ -731,7 +731,7 @@ h1 {
 }
 #loader-desserts {
   opacity: 0;
-  animation: fadeInPage 3s ease forwards;
+  animation: fadeInPage 4s ease forwards;
 }
 
 @keyframes fadeInPage {
