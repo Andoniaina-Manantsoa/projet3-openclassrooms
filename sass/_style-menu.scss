@@ -132,6 +132,12 @@ h1 {
     background-color: $background-color-button;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(0);
+
+    &:hover {
+        transform: translateY(-5px); // monte de 5px au survol
+    }
 
     @media (min-width: 1440px) {
         width: 100%;

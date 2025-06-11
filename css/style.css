@@ -654,6 +654,11 @@ h1 {
   background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+}
+.menu-button:hover {
+  transform: translateY(-5px);
 }
 @media (min-width: 1440px) {
   .menu-button {
