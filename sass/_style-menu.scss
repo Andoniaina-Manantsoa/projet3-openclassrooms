@@ -181,7 +181,7 @@ h1 {
 
 .menu-button:hover .check-menu {
     flex-basis: 50px;
-    transform-origin: right;
+    transition: right 3s ease;
     opacity: 1;
 }
 
@@ -210,42 +210,12 @@ h1 {
     white-space: nowrap;
 }
 
-#loader-entrees {
+#loader {
     opacity: 0;
-    animation: fadeInPage 2s ease forwards;
+    animation: appear 5s ease-out forwards;
 }
 
-@keyframes fadeInPage {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-#loader-plats {
-    opacity: 0;
-    animation: fadeInPage 3s ease forwards;
-}
-
-@keyframes fadeInPage {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-#loader-desserts {
-    opacity: 0;
-    animation: fadeInPage 4s ease forwards;
-}
-
-@keyframes fadeInPage {
+@keyframes appear {
     from {
         opacity: 0;
     }
