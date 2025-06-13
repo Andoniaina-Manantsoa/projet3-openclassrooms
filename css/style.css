@@ -219,6 +219,10 @@ a {
   border: none;
   box-shadow: 0 2px 8px rgba(114, 113, 113, 0.3);
   padding-bottom: 30px;
+  cursor: pointer;
+}
+.button-fonctionnement:hover i {
+  color: grey;
 }
 .button-fonctionnement i {
   color: rgba(128, 28, 171, 0.7921568627);
@@ -638,24 +642,31 @@ h1 {
   }
 }
 
-.entrees-list,
-.plats-list,
-.desserts-list {
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: center;
-}
-
 .menu-button {
   display: flex;
   width: 100%;
   border-radius: 15px;
   padding-left: 15px;
+  margin-bottom: 15px;
   background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  transform: translateY(0);
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-in-out forwards;
+  opacity: 0;
+}
+.menu-button:nth-child(1) {
+  animation-delay: 0s;
+}
+.menu-button:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.menu-button:nth-child(3) {
+  animation-delay: 1s;
+}
+.menu-button:nth-child(4) {
+  animation-delay: 1.5s;
 }
 .menu-button:hover {
   transform: translateY(-5px);
@@ -667,6 +678,16 @@ h1 {
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .menu-content {
   display: flex;
   justify-content: space-between;
@@ -734,60 +755,6 @@ h1 {
   flex: 1 1 auto;
   min-width: 0;
   white-space: nowrap;
-}
-
-/*#loader {
-    opacity: 0;
-    animation: appear 5s ease-out forwards;
-}
-
-@keyframes appear {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}*/
-#loader-entrees {
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-#loader-plats {
-  opacity: 0;
-  animation: fadeIn 4s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-#loader-desserts {
-  opacity: 0;
-  animation: fadeIn 6s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

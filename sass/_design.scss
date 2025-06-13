@@ -198,6 +198,11 @@ $background-color-card: #ffffff;
     border: none;
     box-shadow: 0 2px 8px rgba(114, 113, 113, 0.3);
     padding-bottom: 30px;
+    cursor: pointer;
+
+    &:hover i {
+        color: grey;
+    }
 
     i {
         color: $color-i;
