@@ -64,7 +64,9 @@ h1 {
     align-items: center;
     justify-content: space-between;
 
-    h1 {
+    h2 {
+        font-family: 'Shrikhand', sans-serif;
+
         @media (min-width: 1440px) {
             font-size: 30px;
             margin-top: 20px;
