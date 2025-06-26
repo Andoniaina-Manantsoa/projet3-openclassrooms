@@ -109,10 +109,10 @@ h1 {
     .order-button {
         padding-left: 50px;
         padding-bottom: 15px;
+        text-align: center;
+        justify-content: center;
 
         @media (min-width: 1440px) {
-            text-align: center;
-            justify-content: center;
             font-size: 26px;
         }
     }
